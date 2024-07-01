@@ -35,6 +35,10 @@
 	"dependencies": {
 		"@dotlottie/player-component": "^2.7.12",
 		"@lottiefiles/dotlottie-wc": "^0.2.5",
-		"@lottiefiles/dotlottie-web": "^0.25.0"
+		"@lottiefiles/dotlottie-web": "^0.25.0",
+		"eleventy-google-fonts": "^0.1.0",
+		"eleventy-sass": "^2.2.4",
+		"gsap": "^3.12.5",
+		"reframe.js": "^4.0.2"
 	}
 }

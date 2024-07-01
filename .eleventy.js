@@ -1,10 +1,11 @@
 const transforms = require("./utils/transforms.js");
+const eleventyGoogleFonts = require("eleventy-google-fonts");
 
 module.exports = function (eleventyConfig) {
 	// Folders to copy to build dir (See. 1.1)
 	eleventyConfig.addPassthroughCopy("src/static");
 
-	// Filters
+	eleventyConfig.addPlugin(eleventyGoogleFonts);
 
 	// Transforms
 	Object.keys(transforms).forEach((transformName) => {

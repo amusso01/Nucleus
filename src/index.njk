@@ -4,43 +4,28 @@ title: Nucleus
 description: Nucleus is a venture studio focused on accelerating failure and perfecting execution. Not for everybody.
 ---
 
-<main id="main ">
-  <div class="container mx-auto pt-36">
-    <h3 class="text-xl text-white mb-5">
-      Lista delle versioni dell'animazione:
-    </h3>
-    <ul class="mb-10">
-      <li>
-        <a
-          class="text-white font-extrabold mb-2 inline-block hover:underline"
-          href="/nucleus-v1"
-          >Version - 1</a
-        >
-      </li>
-      <li>
-        <a
-          class="text-white font-extrabold mb-2 inline-block hover:underline"
-          href="/nucleus-v2"
-          >Version - 2</a
-        >
-      </li>
-    </ul>
-    <p class="max-w-xl text-white">
-      L'effetto neon creato con il blur è problematico, le SVG non lo tengono.
-      Non possono essere esportate con il gaussian blur. <br />
-      Quindi, ho chiesto aiuto alla Ceci ed abbiamo trovato un modo alternativo
-      come ti dicevo usando Lottie che riesce parzialmente a tenerlo: <br />
-      <br />
-      - La Versione 1 è quella con li blur originale da SVG. Purtroppo anche su
-      lottie crea un glitch che fa "accendere" l'effetto neon dato dal blur a
-      1/3 dell'animazione. <br />
-      <br />
+<main id="main">
+  <div class="ratio">
+    <dotlottie-player
+      src="https://lottie.host/e6ee42ad-2826-4b6d-976e-788c8c7aff3f/AwSqi8fIPT.lottie"
+      background="transparent"
+      speed="1"
+      direction="1"
+      playMode="normal"
+      autoplay
+    >
+    </dotlottie-player>
 
-      - Per la versione 2 abbiamo creato il blur usando un hack, disegnando
-      tante tante linee parallale a quella del path con opacità decrescente.
-      Così facendo tiene l'effetto neon dal principio dell'animazione. Non è un
-      blur perfetto ma almeno non glitcha... vedi tu e dacci un feedback
-      <br /><br />
-    </p>
+    <div class="btn-wrapper absolute left-1/2 -translate-x-1/2">
+      <div class="btn-neon">
+        <a href="" class="neon">Wanna join us?</a>
+      </div>
+    </div>
   </div>
+  <p class="text-white paragraph-footer">
+    Nucleus is a venture studio focused on accelerating failure and perfecting
+    execution. Not for everybody.
+  </p>
+
+  <!-- <canvas class="canva-play w-screen h-screen"></canvas> -->
 </main>
