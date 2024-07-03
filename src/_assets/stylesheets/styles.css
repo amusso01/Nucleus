@@ -56,9 +56,10 @@ dotlottie-player {
 	margin: auto;
 	text-align: center;
 	visibility: hidden;
-	> span {
-		font-weight: 700;
-	}
+}
+
+.paragraph-footer span {
+	font-weight: 700;
 }
 
 .btn-wrapper {
