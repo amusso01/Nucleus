@@ -55,6 +55,9 @@ dotlottie-player {
 	margin: auto;
 	text-align: center;
 	visibility: hidden;
+	> span {
+		font-weight: 700;
+	}
 }
 
 .btn-wrapper {
@@ -104,12 +107,35 @@ dotlottie-player {
 	height: 56.25vw;
 }
 
+.tickerwrapper {
+	/* the outer div */
+	overflow: hidden;
+	height: 75px;
+}
+
+.marquee {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+
+.marquee h3 {
+	white-space: nowrap;
+	font-weight: 300;
+	font-size: 20px;
+	letter-spacing: 10.2px;
+	line-height: 22px;
+}
+
 @media (max-width: 920px) {
 	.neon,
 	.btn-neon,
 	.btn-wrapper {
 		width: 280px;
 		height: 60px;
+	}
+	.tickerwrapper {
+		height: 65px;
 	}
 }
 
@@ -129,7 +155,12 @@ dotlottie-player {
 
 	.paragraph-footer {
 		font-size: 14px;
-		line-height: 18px;
+		line-height: 20px;
+	}
+	.marquee h3 {
+		font-size: 16px;
+		letter-spacing: 2px;
+		line-height: 22px;
 	}
 }
 
