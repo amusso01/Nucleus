@@ -23,7 +23,7 @@ gsap.set(marquee, { autoAlpha: 0 });
 player.addEventListener("complete", () => {
 	tl.to(marquee, {
 		autoAlpha: 1,
-		duration: 0.8,
+		duration: 0.5,
 		onComplete: Marquee(".marquee", 0.2),
 	});
 	tl.to(btn, { autoAlpha: 1, duration: 1 });
