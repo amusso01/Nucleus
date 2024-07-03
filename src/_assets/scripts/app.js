@@ -8,6 +8,7 @@ let player = document.querySelector("dotlottie-player"),
 	neon = document.querySelector(".btn-neon"),
 	btn = document.querySelector(".neon"),
 	pFooter = document.querySelector(".paragraph-footer");
+marquee = document.querySelector(".tickerwrapper");
 
 let tl = gsap.timeline();
 
@@ -17,8 +18,14 @@ gsap.set(btn, { autoAlpha: 0 });
 gsap.set(btnWrapper, { autoAlpha: 0 });
 gsap.set(neon, { autoAlpha: 0 });
 gsap.set(pFooter, { autoAlpha: 0 });
+gsap.set(marquee, { autoAlpha: 0 });
 
 player.addEventListener("complete", () => {
+	tl.to(marquee, {
+		autoAlpha: 1,
+		duration: 0.8,
+		onComplete: Marquee(".marquee", 0.2),
+	});
 	tl.to(btn, { autoAlpha: 1, duration: 1 });
 	tl.to(btnWrapper, { autoAlpha: 1, duration: 1 }, "<");
 	tl.to(neon, { autoAlpha: 1, duration: 1 }, "<");
@@ -34,6 +41,7 @@ function startNeon() {
 	neon.classList.add("active");
 }
 
+// MARQUEE
 function Marquee(selector, speed) {
 	const parentSelector = document.querySelector(selector);
 	const clone = parentSelector.innerHTML;
@@ -63,4 +71,4 @@ function Marquee(selector, speed) {
 	}, 0);
 }
 
-window.addEventListener("load", Marquee(".marquee", 0.2));
+// window.addEventListener("load", Marquee(".marquee", 0.2));
