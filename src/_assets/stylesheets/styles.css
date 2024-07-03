@@ -112,6 +112,10 @@ dotlottie-player {
 	/* the outer div */
 	overflow: hidden;
 	height: 75px;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
 }
 
 .marquee {
