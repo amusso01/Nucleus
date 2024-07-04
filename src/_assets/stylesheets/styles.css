@@ -53,13 +53,14 @@ dotlottie-player {
 	bottom: 30px;
 	width: 100%;
 	padding: 0 16px;
+	font-weight: 200;
 	margin: auto;
 	text-align: center;
 	visibility: hidden;
 }
 
 .paragraph-footer span {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .btn-wrapper {
