@@ -50,7 +50,7 @@ dotlottie-player {
 	font-size: 18px;
 	line-height: 22px;
 	position: absolute;
-	bottom: 30px;
+	bottom: 25px;
 	width: 100%;
 	padding: 0 16px;
 	font-weight: 200;
@@ -86,6 +86,10 @@ dotlottie-player {
 
 .neon:hover {
 	box-shadow: 0px 0px 24px #1fffc9, 0 0 28px rgba(31, 255, 201, 0.74);
+}
+
+.lottie-mobile {
+	display: none;
 }
 
 .neon {
@@ -133,6 +137,29 @@ dotlottie-player {
 	font-size: 20px;
 	letter-spacing: 10.2px;
 	line-height: 22px;
+	position: relative;
+}
+
+#tickerTape {
+	height: 75px;
+	padding: 30px 0px;
+	font-weight: 300;
+	font-size: 20px;
+	letter-spacing: 10.2px;
+	line-height: 22px;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+main {
+	/* width: 100vw;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	align-items: center; */
+	overflow-x: hidden;
 }
 
 @media (max-width: 920px) {
@@ -144,6 +171,12 @@ dotlottie-player {
 	}
 	.tickerwrapper {
 		height: 65px;
+	}
+	.lottie-desktop {
+		display: none;
+	}
+	.lottie-mobile {
+		display: block;
 	}
 }
 
@@ -164,9 +197,16 @@ dotlottie-player {
 	.paragraph-footer {
 		font-size: 14px;
 		line-height: 20px;
+		bottom: 20px;
 	}
 	.marquee h3 {
 		font-size: 16px;
+		letter-spacing: 2px;
+		line-height: 22px;
+	}
+
+	#tickerTape {
+		font-size: 18px;
 		letter-spacing: 2px;
 		line-height: 22px;
 	}
@@ -181,7 +221,7 @@ dotlottie-player {
 	}
 
 	.btn-wrapper {
-		top: 63%;
+		top: 56%;
 	}
 
 	.neon {
