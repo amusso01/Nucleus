@@ -58,14 +58,14 @@ const tickerTape = new Marquee(document.getElementById("tickerTape"), {
 
 const control = loop(tickerTape, [
 	() =>
-		"WE’RE HIRING PROBLEM SOLVERS IN SOFTWARE ENGINEERING, DESIGN, SALES, AND MARKETING!",
+		"We're hiring problem solvers in software engineering, UI/UX design, sales, product, and marketing!",
 	() => {
 		const marqueeText = document.createElement("div");
 		marqueeText.innerHTML = "&nbsp-&nbsp";
 		return marqueeText;
 	},
 	() =>
-		"WE’RE HIRING PROBLEM SOLVERS IN SOFTWARE ENGINEERING, DESIGN, SALES, AND MARKETING!",
+		"We're hiring problem solvers in software engineering, UI/UX design, sales, product, and marketing!",
 	() => {
 		const marqueeText = document.createElement("div");
 		marqueeText.innerHTML = "&nbsp-&nbsp";
