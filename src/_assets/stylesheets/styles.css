@@ -125,6 +125,10 @@ dotlottie-player {
 	visibility: hidden;
 }
 
+#tickerTape {
+	text-transform: uppercase;
+}
+
 .marquee {
 	overflow: hidden;
 	display: flex;
